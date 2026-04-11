@@ -8,15 +8,16 @@ The data was sourced from Halight via AWS Athena.
 
 ## Contents
 1. [Group Information](#group-information)
-2. [Project Name](#project-name)
-3. [Project Purpose](#project-purpose)
-4. [Business Benefits](#business-benefits)
-5. [Appendix](#appendix)
+2. [Objectives](#objectives)
+3. [Business Value](#business-value)
+4. [Dataset](#dataset)
+5. [Data Strategy](#data-strategy)
+6. [Appendix](#appendix)
    - [Preliminary Dashboard in Power BI](#1-preliminary-dashboard-in-power-bi)
-   - [RCS dataset](#2-rcs-dataset)
-   - [Exploratory Data Analysis (EDA)](#3-exploratory-data-analysis-eda)
-   - [Business Case and Project Charter](#4-business-case-and-project-charter)
-   - [Machine Learning Predictions](#5-machine-learning-predictions)
+   - [Exploratory Data Analysis (EDA)](#2-exploratory-data-analysis-eda)
+   - [Business Case and Project Charter](#3-business-case-and-project-charter)
+   - [Machine Learning Predictions](#4-machine-learning-predictions)
+   - [Power BI Dashboards](#5-power-bi-dashboards)
 
 ## Group Information:
 - **Project Sponsor**: Sean Bridgeman
