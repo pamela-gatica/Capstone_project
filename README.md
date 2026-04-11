@@ -1,3 +1,11 @@
+# Retention Framework Insights
+
+## Project Overview
+This project analyzes user engagement and retention patterns for a local company in Tecumseh, Ontario.  
+The goal is to understand how users move through their learning journey, identify drop-off points, and provide actionable insights to improve retention and engagement.
+
+The data was sourced from Halight via AWS Athena.
+
 ## Contents
 1. [Group Information](#group-information)
 2. [Project Name](#project-name)
@@ -19,20 +27,53 @@
     - Sofia Alfaro
     - Pamela Gatica
     - Yazan Al Shash
-## Project Name
-- **Retention Framework Insights**
-## Project Purpose
-- This project is designed to help a local company in Tecumseh, ON, understand how users move through their learning journey.
-- By analyzing where users drop off and how they engage, our final dashboard may give clear insights to improve retention, help with better decision making and show possible opportunities to make the learning experience more engaging and effective. 
-- The data was sourced through a third party (Halight) via Athena; an AWS SQL Server.
-## Business Benefits
-- Benefit 1: Improve user retention by identifying drop-off points and enabling targeted engagement strategies.
-- Benefit 2: Support data-driven decision-making for product and customer strategy teams through weekly lifecycle insights.
-- Benefit 3: Increase efficiency by automating user journey reporting and reducing manual analysis time.
-- Benefit 4: Discover growth opportunities by uncovering patterns in user behavior and lifecycle progression.
+
+## Objectives
+- Identify user drop-off points (attrition analysis)
+- Understand engagement behavior over time
+- Forecast future engagement trends
+- Support data-driven decision-making
+
+## Business Value
+- Improve user retention through targeted strategies  
+- Enable data-driven product decisions  
+- Automate reporting and reduce manual analysis  
+- Identify growth opportunities through user behavior patterns  
+
+## Dataset
+This project uses two main datasets extracted from AWS Athena:
+1. rcs_lifetime_stats_by_month_v
+   - Used for:
+      - Exploratory Data Analysis (EDA)
+      - Machine Learning models
+      - Initial Power BI dashboard
+   - Key Metrics:
+      - Average daily engagement score
+      - Total lifetimes
+      - Online users
+      - Monthly trends
+        
+2. rcs_historic_users_v
+   - User-level historical dataset
+   - Used for advanced analytics and final dashboards
+   - Applied in:
+      - Attrition Analysis --> Identifying user drop-off behavior
+      - What-If Analysis --> Simulating retention improvements
+      - Cohort Analysis --> Tracking user retention over time
+    
+## Data Strategy
+
+The project follows a layered approach:
+
+- Aggregated data (rcs_lifetime_stats_by_month_v)
+   - Used for high-level trends, forecasting, and modeling
+- User-level data (rcs_historic_users_v)
+   - Used for deep behavioral analysis and retention insights
+
+This combination allows both macro-level insights and granular user analysis, improving the overall quality of the findings.
+
 ## Appendix:
 The deliverables for our Capstone Project are listed down below:
-
 
 ### 1. _**Preliminary Dashboard in Power BI**_
    - Displays insights about user engagement metrics, such as:
@@ -40,33 +81,29 @@ The deliverables for our Capstone Project are listed down below:
       - Average Daily Engagement Score over time
       - Total & Average Lifetimes per User
 
-### 2. _**RCS dataset**_
-   - A Command-Separated-Value (CSV) flat file comprising of 30 variables and 856 observations
-   - Some notable variables used in our analysis include:
-      - _avg_daily_engagement_score_
-      - _total_lifetimes_
-      - _client_name_
-      - _region_name_
-      - _month_date_
-      - _online_users_
-      - _survey completions_
+### 2. **_Exploratory Data Analysis (EDA)_**
+   - Identified patterns and relationships in user behavior  
+   - Detected outliers and engagement trends  
+   - Prepared data for machine learning models  
 
-### 3. **_Exploratory Data Analysis (EDA)_**
-   - Used EDA to summarize the characteristics of the dataset, detect patterns/relationships, and identify outliers.
-   - Assessed various Machine Learning methods to make future predictions on the project for the Winter session.
-
-### 4. **_Business Case and Project Charter_**
+### 3. **_Business Case and Project Charter_**
    - This section outlines the purpose, justification, and structure of the project.
    - It defines the problem being addressed, project objectives, expected benefits, constraints, and risks.
    - It also establishes the project scope, key stakeholders, and high-level plan that will guide the development process.
   
-### 5. **_Machine Learning Predictions_**
+### 4. **_Machine Learning Predictions_**
    - In this section, we apply three machine learning techniques to classify engagement levels (high vs. low) and to forecast engagement trends for 2026 using historical data.
    - The models and techniques used include:
         - Seasonal Naive Forecasting for projecting future engagement trends
         - K-Means Clustering for identifying engagement patterns
-        - Logistic Regression for predicting high and low engagement 
- 
- 
- 
+        - Logistic Regression for predicting high and low engagement
 
+### 5. **_Power BI Dashboards_** **[View / Download Dashboard]([PASTE_YOUR_LINK_HERE](https://app.powerbi.com/links/PmzuyMfD2r?ctid=c986676f-9b39-4d08-b4f8-a668e0e8c6a5&pbi_source=linkShare&bookmarkGuid=b1fd4ac0-96f4-4573-9bcb-ba9c6bed2a52))**
+   - Dashboard Features:
+      - **Attrition Analysis** → Identifies where users drop off  
+      - **What-If Analysis** → Simulates retention scenarios  
+      - **Cohort Analysis** → Tracks user retention over time  
+   - **Engagement Metrics**:
+     - Online users (MoM / YoY)
+     - Average daily engagement score
+     - User lifetime metrics  
