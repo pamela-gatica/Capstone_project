@@ -99,7 +99,7 @@ The deliverables for our Capstone Project are listed down below:
         - Logistic Regression for predicting high and low engagement
 
 ### 5. **_Power BI Dashboards_**
-**[View / Download Dashboard]([PASTE_YOUR_LINK_HERE](https://app.powerbi.com/links/PmzuyMfD2r?ctid=c986676f-9b39-4d08-b4f8-a668e0e8c6a5&pbi_source=linkShare&bookmarkGuid=b1fd4ac0-96f4-4573-9bcb-ba9c6bed2a52))**
+**[View / Download Dashboard]([(https://app.powerbi.com/links/PmzuyMfD2r?ctid=c986676f-9b39-4d08-b4f8-a668e0e8c6a5&pbi_source=linkShare&bookmarkGuid=b1fd4ac0-96f4-4573-9bcb-ba9c6bed2a52]**
    - Dashboard Features:
       - **Attrition Analysis** → Identifies where users drop off  
       - **What-If Analysis** → Simulates retention scenarios  
